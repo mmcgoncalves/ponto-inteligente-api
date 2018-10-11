@@ -69,7 +69,7 @@ public class CadastroPJController {
 		funcionario.setEmpresa(empresa);
 		this.funcionarioService.persistir(funcionario);
 
-		response.setData(this.converterCadastroPJDto(funcionario));
+		response.setData(this.converterCadastroPJDto(funcionario));		
 		return ResponseEntity.ok(response);
 	}
 
